@@ -15,10 +15,24 @@
     form button { background-color: #003366; color: white; padding: 10px 20px; border: none; cursor: pointer; }
   </style>
 </head>
-  <!-- Banner de cookies -->
-<div id="cookie-banner" style="position:fixed; bottom:0; width:100%; background:#333; color:#fff; padding:15px; text-align:center; z-index:1000;">
-  Este sitio utiliza cookies para mejorar tu experiencia. <a href="#cookies" style="color:#ffd700;">Leer más</a>.
-  <button onclick="aceptarCookies()" style="margin-left:15px; padding:5px 10px;">Aceptar</button>
+ <!-- Banner de Cookies Mejorado -->
+<div id="cookie-banner" style="position:fixed; bottom:0; width:100%; background:linear-gradient(90deg, #ff9800, #f44336); color:#fff; padding:20px; font-family:sans-serif; z-index:1000; box-shadow:0 -2px 10px rgba(0,0,0,0.3);">
+  <div style="max-width:900px; margin:auto; display:flex; flex-direction:column; align-items:center;">
+    <h3 style="margin:0 0 10px;">🍪 Usamos cookies para mejorar tu experiencia</h3>
+    <p style="margin:0 0 10px; text-align:center;">
+      Este sitio utiliza cookies técnicas, de análisis y de terceros para ofrecerte una navegación personalizada y segura. Al continuar, aceptas nuestra 
+      <a href="#cookies" style="color:#fff; text-decoration:underline;">Política de Cookies</a> y 
+      <a href="#privacidad" style="color:#fff; text-decoration:underline;">Aviso de Privacidad</a>.
+    </p>
+    <ul style="list-style:none; padding:0; margin:0 0 10px; text-align:center;">
+      <li>🔧 Técnicas: necesarias para el funcionamiento del sitio</li>
+      <li>📊 Análisis: para medir visitas y comportamiento</li>
+      <li>🌐 Terceros: como Google Analytics y redes sociales</li>
+    </ul>
+    <button onclick="aceptarCookies()" style="background:#fff; color:#f44336; border:none; padding:10px 20px; font-weight:bold; border-radius:5px; cursor:pointer;">
+      Aceptar y continuar
+    </button>
+  </div>
 </div>
 
 <script>
@@ -91,3 +105,4 @@
 </body>
 
 </html>
+
