@@ -15,6 +15,24 @@
     form button { background-color: #003366; color: white; padding: 10px 20px; border: none; cursor: pointer; }
   </style>
 </head>
+  <!-- Banner de cookies -->
+<div id="cookie-banner" style="position:fixed; bottom:0; width:100%; background:#333; color:#fff; padding:15px; text-align:center; z-index:1000;">
+  Este sitio utiliza cookies para mejorar tu experiencia. <a href="#cookies" style="color:#ffd700;">Leer más</a>.
+  <button onclick="aceptarCookies()" style="margin-left:15px; padding:5px 10px;">Aceptar</button>
+</div>
+
+<script>
+  // Verifica si ya se aceptaron las cookies
+  if (document.cookie.includes("cookies_aceptadas=true")) {
+    document.getElementById("cookie-banner").style.display = "none";
+  }
+
+  function aceptarCookies() {
+    // Crea una cookie válida por 1 año
+    document.cookie = "cookies_aceptadas=true; max-age=" + 60 * 60 * 24 * 365 + "; path=/";
+    document.getElementById("cookie-banner").style.display = "none";
+  }
+</script>
 <body>
 
 <header>
@@ -71,4 +89,5 @@
 </footer>
 
 </body>
+
 </html>
