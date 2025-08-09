@@ -1,17 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8HSSFRRDFS"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-8HSSFRRDFS');
-</script>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ingeniería Estratégica S.A.</title>
   <style>
     body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
@@ -100,6 +89,24 @@
     gtag('config', 'G-XXXXXXXXXX'); // Reemplaza con tu ID
   }
 </script>
+  <script>
+  // Verifica si el usuario aceptó cookies
+  if (document.cookie.includes("cookies_aceptadas=true")) {
+    cargarGoogleAnalytics();
+  }
+
+  function cargarGoogleAnalytics() {
+    const script = document.createElement("script");
+    script.src = "https://www.googletagmanager.com/gtag/js?id=G-8HSSFRRDFS";
+    script.async = true;
+    document.head.appendChild(script);
+
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-8HSSFRRDFS');
+  }
+</script>
 <body>
 
 <header>
@@ -158,6 +165,7 @@
 </body>
 
 </html>
+
 
 
 
